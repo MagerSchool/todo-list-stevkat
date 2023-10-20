@@ -1,0 +1,20 @@
+.input {
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  align-self: stretch;
+
+  border-radius: 4px;
+  border: 1px solid $color-border;
+  background: $color-field-02;
+  color: $color-text-main;
+
+  transition: filter 0.1s linear;
+
+  &::placeholder {
+    color: $color-text-secondary;
+  }
+  &:hover {
+    filter: brightness(110%);
+  }
+}
