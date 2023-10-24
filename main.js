@@ -1,4 +1,4 @@
-import { addTask, doneTask, deleteTask } from './src/action';
+import { addTask, doneTask, deleteTask } from './src/action/index.js';
 
 import "./src/sass/main.scss"
 
