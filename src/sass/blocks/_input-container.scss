@@ -1,0 +1,11 @@
+.input-wrapper {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 16px;
+
+  background-color: $color-field-01;
+  border-radius: 8px;
+}

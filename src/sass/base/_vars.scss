@@ -1,0 +1,42 @@
+// Colors
+$color-background: #101219;
+$color-field-01: #181B25;
+$color-field-02: #222633;
+$color-field-03: #2F3446;
+
+$color-border: #3F4458;
+
+$color-text-main: #E0E1E4;
+$color-text-secondary: #3F4458;
+
+$color-accent: #262F5A;
+
+$color-success: #29B650;
+$color-error: #B62929;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+@mixin font-placeholder {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+}
+
+@mixin font-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+@mixin font-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+}
+
+@mixin font-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px
+}

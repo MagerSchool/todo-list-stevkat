@@ -1,0 +1,40 @@
+.tasks-wrapper {
+  &__task-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    align-self: stretch;
+    gap: 16px;
+
+    border-radius: 4px;
+    background: $color-field-02;
+  }
+
+  &__task-content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__task-text {
+    @include font-p;
+    color: $color-text-main;
+
+    &--done {
+      color: $color-text-secondary;
+      text-decoration: line-through;
+    }
+  }
+
+  &__task-date {
+    @include font-description;
+    color: $color-text-secondary;
+  }
+
+  &__square-button-wrap {
+    display: flex;
+    gap: 8px;
+  }
+
+}

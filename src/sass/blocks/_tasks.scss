@@ -1,0 +1,25 @@
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  gap: 8px;
+  padding: 16px 16px 16px 16px;
+
+  background-color: $color-field-01;
+  border-radius: 8px;
+
+  &__placeholder {
+    display: flex;
+    align-items: center;
+    &--none {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include font-placeholder;
+    color: $color-text-secondary;
+  }
+}

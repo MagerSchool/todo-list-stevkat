@@ -1,0 +1,24 @@
+// Base
+@import "./base/base";
+@import "./base/reset";
+@import "./base/vars";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/input-container";
+@import "./blocks/tasks";
+
+// Items
+@import "./items/button";
+@import "./items/square-button";
+@import "./items/input";
+@import "./items/task-card";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 80px 20%;
+  gap: 16px
+}

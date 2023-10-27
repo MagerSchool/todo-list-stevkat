@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+
+  background-color: $color-accent;
+  color: $color-text-main;
+
+  transition: filter 0.1s linear;
+
+  @include font-button;
+
+  &:hover {
+    filter: brightness(110%);;
+  }
+}
