@@ -1,4 +1,4 @@
-import { addTask, doneTask, deleteTask } from './src/action/index.js';
+import { addTask, doneTask, deleteTask, renderTask } from './src/action/index.js';
 
 import "./src/sass/main.scss"
 
@@ -11,3 +11,4 @@ const form = document.querySelector('#form');
 form.addEventListener('submit', (event) => addTask(event, inputTask, dateTask, taskWrapper, taskPlaceholder))
 taskWrapper.addEventListener('click', (event) => deleteTask(event, taskPlaceholder, taskWrapper));
 taskWrapper.addEventListener('click', doneTask);
+renderTask(dateTask, taskWrapper, taskPlaceholder);
