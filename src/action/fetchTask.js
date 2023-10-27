@@ -10,15 +10,15 @@ const fetchTask = async () => {
 }
 
 export const renderTask = async (dateTask, taskWrapper, taskPlaceholder) => {
-    const task = await fetchTask();
+    const tasks = await fetchTask();
 
-    task.forEach(todo => {
-        const titleTask = todo.title;
-        const completed = todo.completed;
-        const taskHTML = `
-            <div class="tasks-wrapper__task-card">
+  tasks.forEach(task => {
+      const { id, title, completed } = task;
+
+    const taskHTML = `
+            <div id="task-${id}" class="tasks-wrapper__task-card">
                   <div class="tasks-wrapper__task-content-wrap">
-                    <span class="tasks-wrapper__task-text" id="${completed}">${titleTask}</span>
+                    <span class="tasks-wrapper__task-text ${ completed ? 'tasks-wrapper__task-text--done' : '' }">${title}</span>
                     <span class="tasks-wrapper__task-date">${dateTask.toLocaleString()}</span>
                   </div>
                   <div class="tasks-wrapper__square-button-wrap">
@@ -41,11 +41,4 @@ export const renderTask = async (dateTask, taskWrapper, taskPlaceholder) => {
     if (taskWrapper.children.length > 1) {
         taskPlaceholder.classList.add('tasks-wrapper__placeholder--none');
     }
-
-    const taskTrue = taskWrapper.querySelector('#true');
-
-    taskTrue.forEach(i => {
-        const taskTrue = i.querySelector('#true');
-        console.log(taskTrue);
-    });
 }
